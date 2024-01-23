@@ -358,11 +358,11 @@ button {
 
 /*=============== POPULAR ===============*/
 .popular__container {
-  padding: 1rem 0 5rem;
+  padding: 1rem 0 5rem !important;
 }
 
 .popular__card {
-  width: 290px;
+  width: 290px !important;
   background-color: var(--container-color);
   padding: 0.5rem 0.5rem 1.5rem;
   border-radius: 1rem;
@@ -400,6 +400,34 @@ button {
 
 .popular__card:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
+}
+
+/* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: initial !important;
+  bottom: 0;
+  width: initial !important;
+  height: initial !important;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 3rem) !important;
+}
+
+.swiper-button-next {
+  right: calc(50% - 3rem) !important;
 }
 
 /*=============== VALUE ===============*/
