@@ -131,6 +131,39 @@ button {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  /*color: #fff*/
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
+
+.nav__logo i {
+  font-size: 1rem;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
 
 /*=============== HOME ===============*/
 
