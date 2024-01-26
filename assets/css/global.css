@@ -40,13 +40,13 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
-      --biggest-font-size: 4rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: 0.875rem;
-      --smaller-font-size: 0.813rem;
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -132,7 +132,22 @@ button {
 }
 
 /*=============== CONTACT ===============*/
+.contact__container {
+  row-gap: 2rem;
+}
 
+.contact__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__orbe {
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
 
 /*=============== SUBSCRIBE ===============*/
 
