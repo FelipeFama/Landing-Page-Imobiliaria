@@ -80,6 +80,10 @@
     color: var(--first-color);
 }
 
+.scroll-header .change-theme {
+    color: var(--title-color);
+}
+
 /* Active link */
 .active-link {
     background: linear-gradient(101deg,
