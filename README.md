@@ -31,4 +31,5 @@
 - Mobile Menu
 - Using the scroll reveal library for animations
 - Documentation link: https://scrollrevealjs.org
+- Dark theme
 
