@@ -115,3 +115,23 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const animateReveal = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  //reset: true,
+});
+
+animateReveal.reveal(
+  `.home__title, .popular__container, .subscribe__container, .footer__container`
+);
+animateReveal.reveal(`.home__description, .footer__info`, { delay: 500 });
+animateReveal.reveal(`.home__search`, { delay: 600 });
+animateReveal.reveal(`.home__value`, { delay: 700 });
+animateReveal.reveal(`.home__images`, { delay: 800, origin: "bottom" });
+animateReveal.reveal(`.logos__img`, { interval: 100 });
+animateReveal.reveal(`.value__images, .contact__content`, { origin: "left" });
+animateReveal.reveal(`.value__content, .contact__images`, { origin: "right" });
